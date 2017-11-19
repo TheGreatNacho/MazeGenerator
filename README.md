@@ -1,40 +1,40 @@
 Python Maze Generator
-[hr]
+---------------------------------------------
 Just a fun little experiment to see if I can generate mazes.
 
-Function: generateMaze[br]
-Arguments:	width[br]
-				The width of the maze[br]
-			height[br]
-				The height of the maze[br]
-			startingpoint[br]
-				Where the maze will begin generating from.[br]
-Returns:	Maze Table[br]
-Description:[br]
-			Generate a simple maze and return it as a table.[br]
-[br]
-[br]
-Function: generateMazeAnimated[br]
-Arguments: width[br]
-				The width of the maze[br]
-			height[br]
-				The height of the maze[br]
-			startingpoint[br]
-				Where the maze will begin generating from.[br]
-Returns: Maze Table[br]
-Description:[br]
-			Essentially the same as generateMaze, only it will[br]
-			capture what the maze looks as a PNG like every time[br]
-			the "cursor" moves. Once the maze has finished generating,[br]
-			it will stitch all the PNGs together and create a GIF.[br]
-			Lastly, it will clean up all the PNGs.[br]
-Function: pngMaze[br]
-Arguments:	mazeTable[br]
-				The maze generated using generateMaze or generateMazeAnimated.[br]
-			name[br]
-				The filepath of the generated maze.[br]
-[br]
-[br]				
-Example:[br]
-	m = generateMaze(100,100,[10,5])[br]
+Function: generateMaze
+Arguments:	width
+				The width of the maze
+			height
+				The height of the maze
+			startingpoint
+				Where the maze will begin generating from.
+Returns:	Maze Table
+Description:
+			Generate a simple maze and return it as a table.
+
+			
+Function: generateMazeAnimated
+Arguments: width
+				The width of the maze
+			height
+				The height of the maze
+			startingpoint
+				Where the maze will begin generating from.
+Returns: Maze Table
+Description:
+			Essentially the same as generateMaze, only it will
+			capture what the maze looks as a PNG like every time
+			the "cursor" moves. Once the maze has finished generating,
+			it will stitch all the PNGs together and create a GIF.
+			Lastly, it will clean up all the PNGs.
+Function: pngMaze
+Arguments:	mazeTable
+				The maze generated using generateMaze or generateMazeAnimated.
+			name
+				The filepath of the generated maze.
+
+				
+Example:
+	m = generateMaze(100,100,[10,5])
 	pngMaze(m, "mazes/experiment.png")
