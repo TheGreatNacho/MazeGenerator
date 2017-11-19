@@ -1,5 +1,5 @@
 Python Maze Generator
----------------------------------------------
+[hr]
 Just a fun little experiment to see if I can generate mazes.
 
 Function: generateMaze
